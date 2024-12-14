@@ -1,0 +1,2 @@
+# Server
+keep fans quiet
