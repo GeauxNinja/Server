@@ -1,0 +1,7 @@
+# bash command to keep server fans quiet:
+
+# this command will unlock the fans for manual configurations
+ipmitool -I lanplus -H <ip-addy> -U "your username" -P "your password" raw 0x30 0x30 0x01 0x00
+
+# this command will turn the fans to specific speed (change the 0x04 up or down a digit to increase or decrease):
+ipmitool -I lanplus -H <ip-addy> -U "your username" -P "your password" raw 0x30 0x30 0x02 0xff 0x04
