@@ -1,4 +1,4 @@
-# bash command to keep server fans quiet:
+# bash command to keep server fans quiet: this works on dell-710/720/730 blades. 
 
 # this command will unlock the fans for manual configurations
 ipmitool -I lanplus -H <ip-addy> -U "your username" -P "your password" raw 0x30 0x30 0x01 0x00
